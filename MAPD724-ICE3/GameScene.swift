@@ -19,6 +19,7 @@ class GameScene: SKScene {
     //instance members
     var ocean: Ocean?
     var island: Island?
+    var plane: Plane?
     var clouds: [Cloud] = []
     
     override func didMove(to view: SKView) {
@@ -36,6 +37,10 @@ class GameScene: SKScene {
         island = Island()
         addChild(island!)
         
+        plane = Plane()
+        plane?.position = CGPoint(x: 0, y: -400)
+        addChild(plane!)
+        
         //add clouds
         for _ in 0...2 {
             let cloud = Cloud()
@@ -46,15 +51,15 @@ class GameScene: SKScene {
     
     
     func touchDown(atPoint pos : CGPoint) {
-        
+        plane?.touchMove(newPos: CGPoint(x: pos.x, y: -400))
     }
     
     func touchMoved(toPoint pos : CGPoint) {
-        
+        plane?.touchMove(newPos: CGPoint(x: pos.x, y: -400))
     }
     
     func touchUp(atPoint pos : CGPoint) {
-        
+        plane?.touchMove(newPos: CGPoint(x: pos.x, y: -400))
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -77,6 +82,7 @@ class GameScene: SKScene {
     override func update(_ currentTime: TimeInterval) {
         ocean?.update()
         island?.update()
+        plane?.update()
         for cloud in clouds{
             cloud.update()
         }
