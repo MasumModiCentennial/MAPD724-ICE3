@@ -72,6 +72,8 @@
 		055CE49425E72071003113E3 /* ocean.png in Resources */ = {isa = PBXBuildFile; fileRef = 055CE49325E72070003113E3 /* ocean.png */; };
 		055CE49625E72713003113E3 /* GameProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055CE49525E72713003113E3 /* GameProtocol.swift */; };
 		055CE49925E727BB003113E3 /* GameObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055CE49825E727BB003113E3 /* GameObject.swift */; };
+		055CE49C25E72E31003113E3 /* Ocean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055CE49B25E72E31003113E3 /* Ocean.swift */; };
+		055CE49E25E73C25003113E3 /* Island.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055CE49D25E73C25003113E3 /* Island.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -142,6 +144,8 @@
 		055CE49325E72070003113E3 /* ocean.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ocean.png; sourceTree = "<group>"; };
 		055CE49525E72713003113E3 /* GameProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameProtocol.swift; sourceTree = "<group>"; };
 		055CE49825E727BB003113E3 /* GameObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameObject.swift; sourceTree = "<group>"; };
+		055CE49B25E72E31003113E3 /* Ocean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ocean.swift; sourceTree = "<group>"; };
+		055CE49D25E73C25003113E3 /* Island.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Island.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +178,7 @@
 		055CE40925E71DCE003113E3 /* MAPD724-ICE3 */ = {
 			isa = PBXGroup;
 			children = (
+				055CE49A25E72E16003113E3 /* GameObjects */,
 				055CE49725E7277E003113E3 /* Core */,
 				055CE40A25E71DCE003113E3 /* AppDelegate.swift */,
 				055CE40C25E71DCE003113E3 /* GameScene.sks */,
@@ -290,6 +295,15 @@
 				055CE49825E727BB003113E3 /* GameObject.swift */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		055CE49A25E72E16003113E3 /* GameObjects */ = {
+			isa = PBXGroup;
+			children = (
+				055CE49B25E72E31003113E3 /* Ocean.swift */,
+				055CE49D25E73C25003113E3 /* Island.swift */,
+			);
+			path = GameObjects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -423,7 +437,9 @@
 				055CE41125E71DCE003113E3 /* GameScene.swift in Sources */,
 				055CE49625E72713003113E3 /* GameProtocol.swift in Sources */,
 				055CE41325E71DCE003113E3 /* GameViewController.swift in Sources */,
+				055CE49E25E73C25003113E3 /* Island.swift in Sources */,
 				055CE40B25E71DCE003113E3 /* AppDelegate.swift in Sources */,
+				055CE49C25E72E31003113E3 /* Ocean.swift in Sources */,
 				055CE49925E727BB003113E3 /* GameObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
