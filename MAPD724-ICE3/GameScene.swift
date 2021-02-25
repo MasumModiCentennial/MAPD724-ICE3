@@ -19,6 +19,7 @@ class GameScene: SKScene {
     //instance members
     var ocean: Ocean?
     var island: Island?
+    var clouds: [Cloud] = []
     
     override func didMove(to view: SKView) {
         screenWidth = frame.width
@@ -34,6 +35,13 @@ class GameScene: SKScene {
         //add island
         island = Island()
         addChild(island!)
+        
+        //add clouds
+        for _ in 0...2 {
+            let cloud = Cloud()
+            clouds.append(cloud)
+            addChild(cloud)
+        }
     }
     
     
@@ -69,5 +77,8 @@ class GameScene: SKScene {
     override func update(_ currentTime: TimeInterval) {
         ocean?.update()
         island?.update()
+        for cloud in clouds{
+            cloud.update()
+        }
     }
 }
