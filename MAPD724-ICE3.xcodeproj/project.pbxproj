@@ -76,6 +76,7 @@
 		055CE49E25E73C25003113E3 /* Island.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055CE49D25E73C25003113E3 /* Island.swift */; };
 		055CE4A025E74159003113E3 /* Cloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055CE49F25E74159003113E3 /* Cloud.swift */; };
 		055CE4A225E7462F003113E3 /* Plane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055CE4A125E7462F003113E3 /* Plane.swift */; };
+		055CE4A525E74B44003113E3 /* CollisionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055CE4A425E74B44003113E3 /* CollisionManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -150,6 +151,7 @@
 		055CE49D25E73C25003113E3 /* Island.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Island.swift; sourceTree = "<group>"; };
 		055CE49F25E74159003113E3 /* Cloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cloud.swift; sourceTree = "<group>"; };
 		055CE4A125E7462F003113E3 /* Plane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plane.swift; sourceTree = "<group>"; };
+		055CE4A425E74B44003113E3 /* CollisionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollisionManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +184,7 @@
 		055CE40925E71DCE003113E3 /* MAPD724-ICE3 */ = {
 			isa = PBXGroup;
 			children = (
+				055CE4A325E74B24003113E3 /* Managers */,
 				055CE49A25E72E16003113E3 /* GameObjects */,
 				055CE49725E7277E003113E3 /* Core */,
 				055CE40A25E71DCE003113E3 /* AppDelegate.swift */,
@@ -310,6 +313,14 @@
 				055CE4A125E7462F003113E3 /* Plane.swift */,
 			);
 			path = GameObjects;
+			sourceTree = "<group>";
+		};
+		055CE4A325E74B24003113E3 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				055CE4A425E74B44003113E3 /* CollisionManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -442,6 +453,7 @@
 			files = (
 				055CE41125E71DCE003113E3 /* GameScene.swift in Sources */,
 				055CE4A225E7462F003113E3 /* Plane.swift in Sources */,
+				055CE4A525E74B44003113E3 /* CollisionManager.swift in Sources */,
 				055CE49625E72713003113E3 /* GameProtocol.swift in Sources */,
 				055CE41325E71DCE003113E3 /* GameViewController.swift in Sources */,
 				055CE49E25E73C25003113E3 /* Island.swift in Sources */,

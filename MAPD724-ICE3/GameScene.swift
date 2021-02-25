@@ -83,7 +83,9 @@ class GameScene: SKScene {
         ocean?.update()
         island?.update()
         plane?.update()
+        CollisionManager.squareRadiusCheck(obj1: plane!, obj2: island!)
         for cloud in clouds{
+            CollisionManager.squareRadiusCheck(obj1: plane!, obj2: cloud)
             cloud.update()
         }
     }
